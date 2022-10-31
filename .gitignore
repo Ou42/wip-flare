@@ -1,0 +1,11 @@
+bower_components
+node_modules
+output
+.psci
+html/main.js
+.psci_modules
+.pulp-cache
+.psc-ide-port
+.psc-package
+.spago
+*.bak
