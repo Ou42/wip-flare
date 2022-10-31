@@ -23,7 +23,9 @@ The main design-criterion of this library is ease of use.
 - [Nature invented it first](http://nosubstance.me/post/nature-invented-it-first/) - Blog post with interactive animation
 
 ## Building
+
+~~bower install~~  
+~~pulp build -O -I test -m Test.Main -t html/main.js~~
 ```
-bower install
-pulp build -O -I test -m Test.Main -t html/main.js
-```
+spago build
+cp output/Test.Main/index.js html/main.js
