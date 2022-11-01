@@ -1,5 +1,7 @@
 ## Flare
 
+* ORIGINAL: <https://github.com/sharkdp/purescript-flare>
+
 Flare is a special-purpose UI library for
 [PureScript](https://github.com/purescript/purescript). It is built on top
 of [purescript-signal](https://github.com/bodil/purescript-signal) and uses
@@ -26,6 +28,23 @@ The main design-criterion of this library is ease of use.
 
 ~~bower install~~  
 ~~pulp build -O -I test -m Test.Main -t html/main.js~~
+
+~~spago build~~
+~~cp output/Test.Main/index.js html/main.js~~
 ```
-spago build
-cp output/Test.Main/index.js html/main.js
+-- This is AFAIK correct, but it is a WIP ...
+$ spago build
+$ spago bundle-app -m Test.Main -t html/main.js --path test/**/*.purs
+```
+if `[error] Failed to find esbuild...` then:
+```
+$ npm i -g esbuild
+```
+Then, switch to `html/` subfolder and start a webserver. I used python3's:
+```
+$ cd html
+$ python3 -m http.server
+```
+Then, it should give you an http link, mine was `(http://0.0.0.0:8000/)`,  
+open that link in your browser.
+```
