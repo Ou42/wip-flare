@@ -26,10 +26,15 @@ The main design-criterion of this library is ease of use.
 
 ## Building
 
+* purs v0.15.4
+* spago v0.20.9
+* esbuild v0.15.12
+* npm v8.19.2
+
 ~~bower install~~  
 ~~pulp build -O -I test -m Test.Main -t html/main.js~~
 
-~~spago build~~
+~~spago build~~  
 ~~cp output/Test.Main/index.js html/main.js~~
 ```
 -- This is AFAIK correct, but it is a WIP ...
