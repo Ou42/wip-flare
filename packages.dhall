@@ -103,6 +103,16 @@ let upstream =
         sha256:19a962fbb4c04111c06bbb03b5ed58412dcb3beccbfd59ace970b73fdbaea20d
 
 in  upstream
+  with drawing =
+    { repo = "https://github.com/Ou42/purescript-drawing.git"
+    , version = "work" -- using branch name
+    , dependencies =
+      [ "canvas"
+      , "colors"
+      , "integers"
+      , "lists"
+      ]
+    }
 --  with graphics-drawing.version = "4.0.0" -- didn't work
 {-
   with smolder =

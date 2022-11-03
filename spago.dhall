@@ -20,6 +20,7 @@ to generate this file without the comments in this block.
 --, "console" -- `spago build` [warn] not used, should remove
   , "control"
   , "datetime"
+  , "drawing"
   , "effect"
   , "enums"
   , "foldable-traversable"
